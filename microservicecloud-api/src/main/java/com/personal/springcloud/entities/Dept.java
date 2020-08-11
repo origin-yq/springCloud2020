@@ -10,7 +10,7 @@ import java.io.Serializable;
 @SuppressWarnings("serial")  //忽略警告
 @NoArgsConstructor   //无参构造函数
 @AllArgsConstructor  //全参构造
-@Data //set**/get**方法
+@Data //set**/get**方法   //想要生效，必须安装lombok插件
 @Accessors(chain = true)  //列式访问
 public class Dept implements Serializable {
 
