@@ -4,6 +4,7 @@ import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
+import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
 /**
  * springboot启动时会自动注入数据源和配置jpa,如果spring配置文件没有添加数据库连接信息的配置会发生下面的报错信息
@@ -29,6 +30,7 @@ import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
  */
 @SpringBootApplication
 @MapperScan(value ="com.personal.springcloud.dao" )
+@EnableEurekaClient //服务启动后注册到eureka服务中[相当于客户端连接到服务端即C/S架构]
 public class DeptProvider8081App {
     public static void main(String[] args){
         SpringApplication.run(DeptProvider8081App.class,args);
