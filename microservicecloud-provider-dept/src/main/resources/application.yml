@@ -28,3 +28,12 @@ eureka:
   client:
     service-url:
       defaultZone: http://127.0.0.1:7001/eureka/
+  instance:
+    instance-id: microservicecloud-dept8081  #修改服务路径名
+    prefer-ip-address: true # 访问路径可以显示IP
+
+info:
+  app.name: microservicecloud-dept-provider
+  company.name: yuanqiang
+  build.artifactId: $project.artifactId$
+  build.version: $project.version$
