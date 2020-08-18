@@ -12,6 +12,8 @@
         <module>microservicecloud-provider-dept</module>
         <module>microservicecloud-consumer-dept</module>
         <module>microservicecloud-eureka</module>
+        <module>microservicecloud-eureka-7002</module>
+        <module>microservicecloud-eureka-7003</module>
     </modules>
     <packaging>pom</packaging>
 
