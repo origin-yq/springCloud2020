@@ -35,5 +35,5 @@ eureka:
 info:
   app.name: microservicecloud-dept-provider
   company.name: yuanqiang
-  build.artifactId: $project.artifactId$
-  build.version: $project.version$
+  build.artifactId: ${project.artifactId}
+  build.version: ${project.version}

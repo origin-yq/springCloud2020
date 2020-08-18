@@ -9,3 +9,6 @@ eureka:
     fetch-registry: false # false 表示自己端是注册中心，作用：维护服务实例，但不需要检索服务
     service-url:
       defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/  #设置与eureka server交互的地址查询服务和注册服务都需要依赖这个地址
+    eureka-server-connect-timeout-seconds: 90  # 默认超时时间为90s
+  server:
+    enable-self-preservation: false # 自我保护模式，默认是开启的，最好开启
