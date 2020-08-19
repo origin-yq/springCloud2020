@@ -10,7 +10,7 @@ mybatis:
 # spring 的整合
 spring:
   application:
-   name: microservicecloud-dept     # 该服务对于暴露的服务名
+   name: microservicecloud-dept     # 该服务对外暴露的服务名，消费者即eureka client客户端 可以通过该名称调用服务提供者
    datasource:
      type: com.alibaba.druid.pool.DruidDataSource   #当前数据源操作类型
      driver-class-name: org.gjt.mm.mysql.Driver   #mysql驱动包
