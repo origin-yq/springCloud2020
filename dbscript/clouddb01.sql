@@ -29,10 +29,10 @@ CREATE TABLE `dept`  (
 ) ENGINE = InnoDB AUTO_INCREMENT = 3 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
--- Records of dept
+-- Records of dept   database() mysql函数获取当前数据库名
 -- ----------------------------
-INSERT INTO `dept` VALUES (1, '开发部', 'clouddb01');
-INSERT INTO `dept` VALUES (2, '人事部', 'clouddb01');
-INSERT INTO `dept` VALUES (3, '市场部', 'clouddb01');
+INSERT INTO `dept` VALUES (1, '开发部', database());
+INSERT INTO `dept` VALUES (2, '人事部', database());
+INSERT INTO `dept` VALUES (3, '市场部', database());
 
 SET FOREIGN_KEY_CHECKS = 1;

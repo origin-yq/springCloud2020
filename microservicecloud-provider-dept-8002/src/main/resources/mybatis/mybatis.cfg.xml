@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+    <!--其实这个配置文件可以不写，因为mybatis的配置已经写在了spring配置里-->
+    <settings>
+        <setting name="cacheEnabled" value="value"/> <!--开启二级缓存-->
+    </settings>
+</configuration>
